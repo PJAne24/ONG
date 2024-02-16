@@ -1,0 +1,28 @@
+npm init -y
+npm i express mongoose morgan dotenv cors
+$ npm i -D typescript @types/express @types/morgan @types/mongoose @types/cors @types/node ts-node-dev
+agregamos en los scripst el tsc:tsc
+npmx tsc --init o //midudev npm rim tsc -- --init
+ahora configuramos el rootdir de tsconfig.json
+creamos "dev": "ts-node-dev src/index.ts"
+
+hicimos una prueba con esto---> const greeting: string= 'hello world'
+console.log(greeting);
+
+ahora empezamos importanto express y haciendo toda la configuracion
+posteriormente debemos crear la carpeta routes donde estaran todas las rutas de las partes de donde se redirige el servidor
+crearemos tres archivos en la carpeta routes: producto.ts , ''controller.ts (controlador), ''routes.ts (difinimos las rutas de get post put delete con sus respectivos nombres en las urls);
+para ver mas configuraciones si nos saltase un error dale al min 28:40 que lo explica
+cuando creamos la conexion a la bbdd, tenemos que tener cuidado con la url de conexion, ya que sale la info y la contraseña para acceder al bbdd. --> Asi que
+para ello utilizaremos variables de entorno
+
+
+
+express es un framework de node que nos permite poder crear el código de back-end crear aplicaciones de back-end por ejemplo
+aplicaciones que devuelvan html o aplicaciones que nos permitan operar con una base de datos o básicamente nos permite crear el servidor
+
+mongoose no es en sí la base de datos es tan solo el módulo de conexión ya deberían tener mongodb instalado
+
+adicionalmente a esto tenemos instalar un módulo relacionado con la manera de poder ver por consola las peticiones que van llegando a este módulo se llama morgan y es más que todo para ayuda de nosotros cuando estemos desarrollando para ver las peticiones que van llegando en consola
+
+instalar un módulo que me ayude a trabajar con las variables de entorno este módulo se llama 2m este módulo 2 me permite poder declarar variables que van a ser propias de este computador tan solamente y de esa manera pues voy a mantener un poco más asegurar las conexiones a la base de datos

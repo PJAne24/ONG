@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #ffffffc4;
+    backdrop-filter: blur(21.5px);
+    padding: 13px 0;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: sticky; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li img {
+    height: auto;
+    width: 170px;
+    margin-left: 7rem;
+    /* Añadido para ajustar el margen izquierdo del logo */
+    margin-right: 7rem;
+    /* Añadido para ajustar el margen derecho del logo */
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 0.5rem 2.5rem;
+    /* Añadido para ajustar el espaciado dentro de cada enlace */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    /* Cambiado 1fr a auto para ajustar el ancho automáticamente */
+    align-items: center;
+    justify-items: center;
+}

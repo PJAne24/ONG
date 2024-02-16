@@ -1,0 +1,30 @@
+//simulador de panel
+//RECUERDA TENER INSTALADO REST CLIENT para poder ver las peticiones como si lo hicieramos con postman
+
+@url = http://localhost:3000
+
+### Recibiendo productos
+GET {{url}}/productos
+### Recibiendo un producto
+GET {{url}}/productos/65cfb3fef0bb248d9f759a08
+### Creando producto
+
+//Definimos que tipo de datos vamos a enviar
+POST {{url}}/productos
+Content-Type: application/json
+
+{
+    "url": "https://ami3.org/amitres/wp-content/uploads/2017/06/Catalogo_AMI3-1.jpg",
+    "title": "producto",
+    "description": "esto es un producto"
+}
+//Para conectarte a la base de datos mongosh
+### Eliminando producto
+DELETE {{url}}/65cfbb2a9715cbe5782b5a5b
+### Actualizando producto
+PUT  {{url}}/productos/65cfdcb2a647eca783d292db
+Content-Type: application/json
+
+{
+    "title": "cuaderno con cuadritos"
+}

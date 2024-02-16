@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Añadido para que el padding y el borde no afecten al tamaño total del elemento */
+}
+
+.background {
+    width: 80%;
+    max-width: 1200px; /* Establece un ancho máximo para evitar que el contenido se expanda demasiado en pantallas grandes */
+    margin: 0 auto;
+    background: rgba(218, 218, 218, 0.04);
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1); /* Ajuste de la sombra */
+    padding: 2rem; /* Añadido para separar el contenido del borde */
+}
+
+#slider {
+    width: 100%;
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+    margin: 3.8rem 0;
+}
+
+.titles {
+    text-align: center;
+    padding: 2rem 0; /* Reducido el espacio vertical */
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el número de columnas según el espacio disponible */
+    gap: 1rem; /* Añadido espacio entre imágenes */
+    justify-content: center; /* Centra las imágenes */
+}
+
+.flashcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 0; /* Añadido espacio vertical */
+}
+
+.flashcards div {
+    text-align: center; /* Centra el contenido */
+    background-color: rgba(255, 255, 255, 0.9); /* Reducida la opacidad para que el fondo sea menos sólido */
+    padding: 1.5rem; /* Ajustado el padding */
+    border-radius: 10px; /* Reducido el radio del borde */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Ajuste de la sombra */
+}
+
+.flashcards img {
+    max-width: 100%; /* Asegura que las imágenes no sobrepasen su contenedor */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .background {
+        width: 90%; /* Ajusta el ancho en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .background {
+        padding: 1rem; /* Reducción del espacio alrededor del contenido */
+    }
+}

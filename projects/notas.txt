@@ -1,0 +1,14 @@
+NOTAS
+//Para ejecutar el proyecto
+npm run dev
+
+//Para conectarte a la base de datos mongosh
+
+comandos utilizados:
+
+show dbs
+use productos  
+show collections //muestra la coleccion de productos
+db.productos.find()
+db.productos.find().pretty()
+db.productos.drop()
