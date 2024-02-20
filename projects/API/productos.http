@@ -7,12 +7,13 @@
 GET {{url}}/productos
 ### Recibiendo un producto
 GET {{url}}/productos/65cfb3fef0bb248d9f759a08
+
 ### Creando producto
 
 //Definimos que tipo de datos vamos a enviar
 POST {{url}}/productos
 Content-Type: application/json
-
+//solo inserta un producto, si quieres importar el array de json, esta en productos.json
 {
     "url": "https://ami3.org/amitres/wp-content/uploads/2017/06/Catalogo_AMI3-1.jpg",
     "title": "producto",
